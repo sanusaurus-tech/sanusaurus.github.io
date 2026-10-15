@@ -1,0 +1,486 @@
+/* css/style.css — Sanusaurus To-Do App */
+
+/* =========================================================
+   1. CSS Custom Properties
+   ========================================================= */
+
+:root {
+  /* Dark-blue palette */
+  --color-bg:          #0d1b2a;   /* page background — deep navy */
+  --color-surface:     #1b2d42;   /* card / panel background */
+  --color-surface-alt: #243852;   /* slightly lighter surface for inputs */
+  --color-border:      #2e4a6b;   /* subtle border lines */
+  --color-text:        #e8edf2;   /* primary text */
+  --color-text-muted:  #7a93b0;   /* secondary / placeholder text */
+
+  /* Colorful accent highlights */
+  --color-accent-cyan:   #00d4ff;  /* clock, links */
+  --color-accent-green:  #39d98a;  /* add / confirm actions */
+  --color-accent-orange: #ff7f40;  /* timer, edit actions */
+  --color-accent-purple: #b47fff;  /* greeting, headings */
+  --color-accent-red:    #ff5670;  /* delete / danger actions */
+  --color-accent-yellow: #ffd166;  /* completed badge, warnings */
+
+  /* Typography */
+  --font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+
+  /* Spacing scale */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+
+  /* Transition */
+  --transition-fast: 150ms ease;
+}
+
+/* =========================================================
+   2. Box-sizing Reset
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================================
+   3. Base / Body Styles
+   ========================================================= */
+
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================
+   4. Base Element Defaults
+   ========================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-accent-cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: var(--radius-sm);
+  transition: opacity var(--transition-fast), background-color var(--transition-fast);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+input[type="text"],
+input[type="url"] {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--color-surface-alt);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-md);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+input[type="text"]::placeholder,
+input[type="url"]::placeholder {
+  color: var(--color-text-muted);
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus {
+  border-color: var(--color-accent-cyan);
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================================================
+   5. App Layout
+   ========================================================= */
+
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: var(--space-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+/* =========================================================
+   6. Panel Card Base
+   ========================================================= */
+
+.panel {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.panel-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+/* =========================================================
+   7. Greeting Panel
+   ========================================================= */
+
+.panel-greeting {
+  border-top: 3px solid var(--color-accent-purple);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-greeting #greeting {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-accent-purple);
+  margin-bottom: var(--space-xs);
+}
+
+.panel-greeting #clock {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-accent-cyan);
+  letter-spacing: 0.04em;
+}
+
+.panel-greeting #date {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+/* =========================================================
+   8. Focus Timer Panel
+   ========================================================= */
+
+.panel-timer {
+  border-top: 3px solid var(--color-accent-orange);
+  align-items: center;
+  text-align: center;
+}
+
+#timer-display {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-accent-orange);
+  letter-spacing: 0.06em;
+}
+
+.timer-controls {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timer-controls button {
+  padding: var(--space-sm) var(--space-lg);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  color: var(--color-bg);
+}
+
+#btn-start {
+  background-color: var(--color-accent-green);
+}
+
+#btn-start:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+#btn-stop {
+  background-color: var(--color-accent-yellow);
+}
+
+#btn-stop:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+#btn-reset {
+  background-color: var(--color-accent-orange);
+}
+
+#btn-reset:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+/* =========================================================
+   9. Task Manager Panel
+   ========================================================= */
+
+.panel-tasks {
+  border-top: 3px solid var(--color-accent-green);
+}
+
+.task-input-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.task-input-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+#btn-add-task {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-accent-green);
+  color: var(--color-bg);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+#btn-add-task:hover {
+  opacity: 0.85;
+}
+
+/* Error messages */
+.error-msg {
+  font-size: 0.8rem;
+  color: var(--color-accent-red);
+  min-height: 1.2em;
+  display: block;
+}
+
+/* Task list */
+#task-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background-color: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+}
+
+/* Checkbox */
+.task-checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--color-accent-green);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Task text */
+.task-text {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Completed state — Requirement 6.2 */
+.completed .task-text {
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+}
+
+/* Edit input (replaces task-text in edit mode) */
+.task-edit-input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Task action buttons */
+.btn-edit,
+.btn-save,
+.btn-cancel,
+.btn-delete {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.btn-edit {
+  background-color: var(--color-accent-orange);
+  color: var(--color-bg);
+}
+
+.btn-edit:hover {
+  opacity: 0.85;
+}
+
+.btn-save {
+  background-color: var(--color-accent-green);
+  color: var(--color-bg);
+}
+
+.btn-save:hover {
+  opacity: 0.85;
+}
+
+.btn-cancel {
+  background-color: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+}
+
+.btn-cancel:hover {
+  border-color: var(--color-text-muted);
+  color: var(--color-text);
+}
+
+.btn-delete {
+  background-color: var(--color-accent-red);
+  color: #fff;
+}
+
+.btn-delete:hover {
+  opacity: 0.85;
+}
+
+/* =========================================================
+   10. Quick Links Panel
+   ========================================================= */
+
+.panel-links {
+  border-top: 3px solid var(--color-accent-cyan);
+}
+
+.link-input-row {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.link-input-row input {
+  flex: 1;
+  min-width: 120px;
+}
+
+#btn-add-link {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-accent-cyan);
+  color: var(--color-bg);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+#btn-add-link:hover {
+  opacity: 0.85;
+}
+
+/* Links container */
+#links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+/* Individual link button */
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface-alt);
+  color: var(--color-accent-cyan);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.link-btn:hover {
+  background-color: var(--color-border);
+  border-color: var(--color-accent-cyan);
+  text-decoration: none;
+}
+
+/* Delete link button */
+.btn-delete-link {
+  padding: 2px var(--space-xs);
+  background-color: transparent;
+  color: var(--color-accent-red);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  line-height: 1;
+}
+
+.btn-delete-link:hover {
+  background-color: var(--color-accent-red);
+  color: #fff;
+}
+
+/* =========================================================
+   11. Responsive Layout
+   ========================================================= */
+
+/* Two-column → single-column at tablet / phone */
+@media (max-width: 720px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    padding: var(--space-md);
+    gap: var(--space-md);
+  }
+}

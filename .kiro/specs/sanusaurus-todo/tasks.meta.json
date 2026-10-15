@@ -1,0 +1,291 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Scaffold project structure and base HTML": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071195399
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071201134
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071244827
+      }
+    ],
+    "2.1 Define CSS variables, reset, and global styles": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071196849
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071248105
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071306254
+      }
+    ],
+    "2.2 Style the four panel sections": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071196942
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071321444
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071393331
+      }
+    ],
+    "3.1 Write `getGreeting(hour)`, `formatDate(date)`, and `startClock()`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197031
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071326482
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071397135
+      }
+    ],
+    "4.1 Write timer state variables and `formatTime(seconds)`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197114
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071329905
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071400890
+      }
+    ],
+    "4.2 Implement `startTimer()`, `stopTimer()`, `resetTimer()`, and `handleTimerEnd()`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197181
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071422784
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071805805
+      }
+    ],
+    "5. Checkpoint — Greeting Panel and Timer": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197249
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071983832
+      }
+    ],
+    "6.1 Write `loadTasks()` and `saveTasks(tasks)`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197311
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071253028
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071312702
+      }
+    ],
+    "7.1 Implement `addTask(description)`, `editTask(id, newDescription)`, `toggleComplete(id)`, `deleteTask(id)`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197378
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071426621
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071809668
+      }
+    ],
+    "7.2 Implement `renderTasks()`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197472
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071817910
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071975414
+      }
+    ],
+    "8. Checkpoint — Task Manager": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197557
+      }
+    ],
+    "9.1 Write `loadLinks()`, `saveLinks(links)`, and `isValidUrl(url)`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197618
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071257223
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071316674
+      }
+    ],
+    "10.1 Implement `addLink(label, url)` and `deleteLink(id)`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197679
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071438370
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071813678
+      }
+    ],
+    "10.2 Implement `renderLinks()`": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197736
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071822841
+      },
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071979359
+      }
+    ],
+    "11.1 Register the `DOMContentLoaded` listener and call all startup functions": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197797
+      }
+    ],
+    "12. Final checkpoint — Full test suite": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071197852
+      }
+    ],
+    "6. Implement Task Manager — data layer": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071312866
+      }
+    ],
+    "9. Implement Quick Links — data layer": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071316847
+      }
+    ],
+    "2. Implement the dark-blue theme and base CSS layout": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071393423
+      }
+    ],
+    "3. Implement the Greeting Panel module": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071397239
+      }
+    ],
+    "4. Implement the Focus Timer module": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071805887
+      }
+    ],
+    "7. Implement Task Manager — mutations and rendering": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071975547
+      }
+    ],
+    "10. Implement Quick Links — mutations and rendering": [
+      {
+        "executionId": "2e11da4d-d17b-4e1f-ae83-3d25902209f1",
+        "chatSessionId": "sess_529e3a62-c6a5-4d67-84f7-882eb0cf687c",
+        "timestamp": 1792071979494
+      }
+    ]
+  }
+}

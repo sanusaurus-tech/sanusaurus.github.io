@@ -1,0 +1,14 @@
+{
+  "name": "sanusaurus-todo",
+  "version": "1.0.0",
+  "description": "Sanusaurus To-Do App",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "jsdom": "^24.0.0"
+  }
+}

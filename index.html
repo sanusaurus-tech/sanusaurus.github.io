@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanusaurus — Productivity App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="app-container">
+
+      <!-- ===== Greeting Panel ===== -->
+      <section class="panel panel-greeting" aria-label="Greeting Panel">
+        <h2 id="greeting">Good Morning</h2>
+        <p id="clock" aria-live="polite">00:00:00</p>
+        <p id="date">Monday, 1 January 2000</p>
+      </section>
+
+      <!-- ===== Focus Timer Panel ===== -->
+      <section class="panel panel-timer" aria-label="Focus Timer">
+        <h3 class="panel-title">Focus Timer</h3>
+        <p id="timer-display" aria-live="polite">25:00</p>
+        <div class="timer-controls">
+          <button id="btn-start" type="button">Start</button>
+          <button id="btn-stop" type="button">Stop</button>
+          <button id="btn-reset" type="button">Reset</button>
+        </div>
+      </section>
+
+      <!-- ===== Task Manager Panel ===== -->
+      <section class="panel panel-tasks" aria-label="Task Manager">
+        <h3 class="panel-title">To-Do List</h3>
+        <div class="task-input-row">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Add a new task…"
+            aria-label="New task description"
+          />
+          <button id="btn-add-task" type="button">Add</button>
+        </div>
+        <span id="task-error" class="error-msg" role="alert" aria-live="assertive"></span>
+        <ul id="task-list" aria-label="Task list"></ul>
+      </section>
+
+      <!-- ===== Quick Links Panel ===== -->
+      <section class="panel panel-links" aria-label="Quick Links">
+        <h3 class="panel-title">Quick Links</h3>
+        <div class="link-input-row">
+          <input
+            type="text"
+            id="link-label-input"
+            placeholder="Label"
+            aria-label="Link label"
+          />
+          <input
+            type="url"
+            id="link-url-input"
+            placeholder="https://example.com"
+            aria-label="Link URL"
+          />
+          <button id="btn-add-link" type="button">Add Link</button>
+        </div>
+        <span id="link-error" class="error-msg" role="alert" aria-live="assertive"></span>
+        <div id="links-container" aria-label="Saved links"></div>
+      </section>
+
+    </div><!-- /.app-container -->
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
